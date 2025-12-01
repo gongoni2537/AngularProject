@@ -1,0 +1,26 @@
+.login-wrapper {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.login-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.login-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.login-form-row {
+  margin-bottom: 12px;
+}
+
+.login-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}

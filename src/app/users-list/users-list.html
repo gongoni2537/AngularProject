@@ -1,0 +1,29 @@
+<div class="users-header">
+  <h2>רשימת משתמשים</h2>
+  <span>סה"כ: {{ users.length }} משתמשים</span>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>שם משתמש</th>
+      <th>אימייל</th>
+      <th>תפקיד</th>
+      <th>פעולות</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users" [ngClass]="{ 'admin-row': user.role === 'admin' }">
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.role }}</td>
+      <td>
+        <div class="action-buttons">
+          <button (click)="onEdit(user)">עריכה</button>
+          <button (click)="onDelete(user)">מחיקה</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

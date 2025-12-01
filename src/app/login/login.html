@@ -1,0 +1,28 @@
+<div class="login-wrapper">
+  <div class="login-title">כניסה למערכת</div>
+  <div class="login-subtitle">הזן שם משתמש וסיסמה כדי להמשיך</div>
+
+  <form (ngSubmit)="onLogin()">
+    <div class="login-form-row">
+      <label>שם משתמש</label>
+      <input
+        type="text"
+        [(ngModel)]="username"
+        name="username"
+        required>
+    </div>
+
+    <div class="login-form-row">
+      <label>סיסמה</label>
+      <input
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        required>
+    </div>
+
+    <div class="login-actions">
+      <button type="submit">התחבר</button>
+    </div>
+  </form>
+</div>

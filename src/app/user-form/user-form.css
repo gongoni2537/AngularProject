@@ -1,0 +1,21 @@
+.user-form-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.user-form-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.user-form-row {
+  margin-bottom: 12px;
+}
+
+.user-form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}

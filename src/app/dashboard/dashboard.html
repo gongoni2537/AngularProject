@@ -1,0 +1,13 @@
+<div class="page-title">ניהול משתמשים</div>
+<div class="page-subtitle">הצגת כל המשתמשים והוספת משתמשים חדשים</div>
+
+<div class="section-card">
+  <app-users-list (edit)="onEditUser($event)"></app-users-list>
+</div>
+
+<div class="section-card">
+  <app-user-form
+    [userToEdit]="selectedUser"
+    (saved)="onUserSaved()">
+  </app-user-form>
+</div>
